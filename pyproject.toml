@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "simple-conversation-agent"
+version = "0.1.0"
+description = ""
+authors = ["João Schmidt <joao.schmidt92@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langchain = "^0.3.7"
+langchain-experimental = "^0.3.3"
+openai = "^1.55.0"
+python-dotenv = "^1.0.1"
+langchain-openai = "^0.2.9"
+typer = "^0.13.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ai-agent = "simple_conversation_agent.main:app"
